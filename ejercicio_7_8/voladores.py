@@ -16,3 +16,7 @@ class Avion(Volador):
 class Helicoptero(Volador):
     def volar(self):
         return "El helicóptero despega al rotar sus hélices."
+
+voladores = [Pajaro(), Avion(), Helicoptero()]
+for volador in voladores:
+   print(volador.volar())
